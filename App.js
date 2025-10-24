@@ -10,6 +10,7 @@ import ProfilePage from './src/pages/ProfilePage';
 import MatchPage from './src/pages/MatchPage';
 import ClubPage from './src/pages/ClubPage';
 import MatchSuccessPage from './src/pages/MatchSuccessPage'; // Tela de sucesso do Match
+import Chat from './src/pages/Chat'; // Adicione o import do Chat
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -42,6 +43,16 @@ function MainApp() {
         name="MatchSuccess" 
         component={MatchSuccessPage} 
         options={{ presentation: 'modal' }} 
+      />
+      {/* Adicione a tela de Chat */}
+      <Stack.Screen 
+        name="Chat" 
+        component={Chat}
+        options={{ 
+          headerShown: true,
+          title: 'Chat',
+          presentation: 'card'
+        }} 
       />
     </Stack.Navigator>
   );

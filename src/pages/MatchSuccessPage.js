@@ -39,7 +39,7 @@ export default function MatchSuccessPage({ navigation }) {
         {/* Botão para iniciar uma conversa */}
         <Button 
           title="Iniciar Conversa"
-          onPress={() => alert('Abrir tela de chat!')} // Exibe um alerta simulando a abertura do chat
+          onPress={() => navigation.navigate('Chat')} // Atualiza a navegação para o Chat
         />
         {/* Botão para continuar navegando */}
         <Button 
