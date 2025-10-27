@@ -22,7 +22,7 @@ const userBooks = [
 // -----------------------------
 
 // Componente principal da página de perfil
-export default function ProfilePage() {
+export default function ProfilePage({navigation}) {
   return (
     // Container principal da página
     <View style={Estilo.container}>
@@ -50,13 +50,13 @@ export default function ProfilePage() {
         numColumns={2} // Exibe os livros em duas colunas
         contentContainerStyle={Estilo.listContainer} // Estilo do container da lista
       />
-
-      {/* Rodapé com botão para adicionar novo livro */}
-      <View style={Estilo.footer}>
-        <Button 
-          title="+ Adicionar Novo Livro" 
-          onPress={() => alert('Abrir tela para adicionar livro!')}// Ação ao clicar no botão
-          style={{ backgroundColor: 'rgb(49, 49, 49)' }} 
+{/* Rodapé com botão para adicionar novo livro */}
+<View style={Estilo.footer}>
+        <Button
+          title="+ Adicionar Novo Livro"
+          // 2. Mude o onPress para usar a navegação
+          onPress={() => navigation.navigate('AddBook')} // <--- MUDANÇA AQUI
+          style={{ backgroundColor: 'rgb(49, 49, 49)' }}
         />
       </View>
     </View>

@@ -14,7 +14,7 @@ const clubs = [
     coverImageUrl: 'https://placehold.co/300x450/333/EEE?text=Fahrenheit+451', // URL da imagem da capa
     date: '25 de Outubro de 2025', // Data do clube
     time: '18:30', // Horário do clube
-    location: 'Biblioteca Central - Sala 3B', // Local do clube
+    location: 'Colégio Esatadual Marcelino Champagnat - Sala 3B', // Local do clube
     currentParticipants: 7, // Número atual de participantes
     maxParticipants: 10, // Número máximo de participantes
   },
@@ -25,7 +25,7 @@ const clubs = [
     coverImageUrl: 'https://placehold.co/300x450/333/EEE?text=1984', // URL da imagem da capa
     date: '30 de Outubro de 2025', // Data do clube
     time: '19:00', // Horário do clube
-    location: 'Biblioteca Central - Sala 2A', // Local do clube
+    location: 'Univerdidade Positivo - Sala 2A', // Local do clube
     currentParticipants: 5, // Número atual de participantes
     maxParticipants: 12, // Número máximo de participantes
   },
